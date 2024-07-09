@@ -11,7 +11,7 @@ function App() {
       if (isActive) {
         interval = setInterval(() => {
           setTime((time) => (time > 0 ? time - 1 : 0))
-        }, 10);
+        }, 1000);
       } else if (!isActive && time !== 0) {
         clearInterval(interval)
       }
